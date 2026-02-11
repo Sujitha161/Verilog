@@ -14,7 +14,7 @@ module fa(input a,b,cin,
    half_adder ha2 ( .a(sum1),.b(cin),.sum(sum),.carry(carry[1]));
    assign cout=carry[0]|carry[1];
 
-   endmodule
+endmodule
 
 
 
