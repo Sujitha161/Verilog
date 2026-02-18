@@ -1,5 +1,5 @@
 $date
-	Mon Feb 16 08:42:33 2026
+	Tue Feb 17 06:22:12 2026
 $end
 $version
 	Icarus Verilog
@@ -8,7 +8,7 @@ $timescale
 	1s
 $end
 $scope module tb_srcon $end
-$var wire 1 ! q_out $end
+$var wire 1 ! q $end
 $var reg 1 " clk $end
 $var reg 1 # j $end
 $var reg 1 $ k $end
@@ -16,11 +16,13 @@ $scope module uut $end
 $var wire 1 " clk $end
 $var wire 1 # j $end
 $var wire 1 $ k $end
-$var wire 1 ! q_out $end
+$var wire 1 % q1 $end
+$var wire 1 & q2 $end
+$var wire 1 ! q $end
 $scope module sr1 $end
 $var wire 1 " clk $end
-$var wire 1 $ r $end
-$var wire 1 # s $end
+$var wire 1 & r $end
+$var wire 1 % s $end
 $var reg 1 ! q $end
 $upscope $end
 $upscope $end
@@ -31,6 +33,8 @@ $dumpall
 $end
 #0
 $dumpvars
+0&
+0%
 1$
 0#
 1"
@@ -40,6 +44,7 @@ $end
 0"
 #10
 1!
+0%
 1"
 0$
 1#
@@ -51,37 +56,51 @@ $end
 #25
 0"
 #30
+1%
 0!
+0&
 1"
 1$
 1#
 #35
 0"
 #40
+0%
+1&
 1!
 1"
 #45
 0"
 #50
+1%
+0&
 0!
 1"
 #55
 0"
 #60
+0%
+1&
 1!
 1"
 #65
 0"
 #70
+1%
+0&
 0!
 1"
 #75
 0"
 #80
+0%
+1&
 1!
 1"
 #85
 0"
 #90
+1%
+0&
 0!
 1"
