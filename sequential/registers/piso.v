@@ -1,7 +1,7 @@
 module d_ff(
         input clk,rst,d,
         output reg q);
-always@(negedge clk or negedge rst)
+always@(posedge clk or negedge rst)
 begin
         if(rst)
                 q<=0;
