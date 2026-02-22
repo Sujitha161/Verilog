@@ -1,0 +1,197 @@
+$date
+	Thu Feb 19 12:34:55 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_seq $end
+$var wire 1 ! out $end
+$var parameter 32 " s_w $end
+$var reg 1 # clk $end
+$var reg 1 $ d $end
+$var reg 1 % rst $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var wire 1 % rst $end
+$var parameter 3 & s0 $end
+$var parameter 3 ' s1 $end
+$var parameter 3 ( s2 $end
+$var parameter 3 ) s3 $end
+$var parameter 3 * s4 $end
+$var parameter 32 + s_w $end
+$var reg 4 , ns [3:0] $end
+$var reg 1 ! out $end
+$var reg 4 - state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 +
+b100 *
+b11 )
+b10 (
+b1 '
+b0 &
+b11 "
+$end
+#0
+$dumpvars
+b0 -
+b0 ,
+1%
+0$
+1#
+0!
+$end
+#5
+0#
+#10
+1#
+0%
+#15
+0#
+#20
+b1 ,
+1#
+1$
+#25
+0#
+#30
+b1 -
+b10 ,
+1#
+0$
+#35
+0#
+#40
+b11 ,
+b10 -
+1#
+#45
+0#
+#50
+b11 -
+b100 ,
+1#
+1$
+#55
+0#
+#60
+b100 -
+0!
+b10 ,
+1#
+0$
+#65
+0#
+#70
+b11 ,
+b10 -
+1#
+#75
+0#
+#80
+b0 ,
+b11 -
+1#
+#85
+0#
+#90
+b0 -
+b1 ,
+1#
+1$
+#95
+0#
+#100
+b1 -
+1#
+#105
+0#
+#110
+1#
+#115
+0#
+#120
+1#
+#125
+0#
+#130
+1#
+#135
+0#
+#140
+1#
+#145
+0#
+#150
+1#
+#155
+0#
+#160
+1#
+#165
+0#
+#170
+1#
+#175
+0#
+#180
+1#
+#185
+0#
+#190
+1#
+#195
+0#
+#200
+1#
+#205
+0#
+#210
+1#
+#215
+0#
+#220
+1#
+#225
+0#
+#230
+1#
+#235
+0#
+#240
+1#
+#245
+0#
+#250
+1#
+#255
+0#
+#260
+1#
+#265
+0#
+#270
+1#
+#275
+0#
+#280
+1#
+#285
+0#
+#290
+1#
+#295
+0#
+#300
+1#
+#305
+0#
+#310
+1#

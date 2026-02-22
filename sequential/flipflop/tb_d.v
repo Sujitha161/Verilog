@@ -1,7 +1,7 @@
 module tb_d;
 	reg d,clk,rst;
 	wire q;
-t_ff uut(.d(d),.clk(clk),.rst(rst),.q(q));
+d_ff uut(.d(d),.clk(clk),.rst(rst),.q(q));
 
 	always #5 clk = ~clk;
 	initial begin
