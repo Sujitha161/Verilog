@@ -1,10 +1,10 @@
 module sync_fifo
-      # ( parameter d_width= 16 ,depth = 9)
+      # ( parameter d_width= 16 ,depth = 8)
 	(input w,r,clk,rst,             // w - write , r - read
 	input [d_width-1:0] din,
   	output full,empty,	
 	output reg [d_width-1:0] dout,
-output reg [3:0] wptr,rptr);                          // wptr - write pointer, rptr - read pointer
+output reg [$clog2(depth)-1:0] wptr,rptr);                          // wptr - write pointer, rptr - read pointe$r
 reg [d_width-1:0] fifo_mem [depth-1:0];
 integer i;
 
@@ -20,12 +20,13 @@ begin
 	end
 	else if ( w && !full)
 	begin
-		fifo_mem[wptr[3:0]] <= din;
-		if (wptr == 4'b1001)
+		if (wptr == depth )
 			wptr <= 0;
-		else
-	        wptr <= wptr + 1;
+		else begin
+		fifo_mem[wptr[3:0]] <= din;
+		wptr <= wptr + 1'b1;
 	end
+end
 end
 always @(posedge clk)     // read operation
 begin
@@ -36,12 +37,13 @@ begin
 	end
 	else if ( r && !empty)
 	begin
-		dout <= fifo_mem[rptr[3:0]];
-		if (rptr == 4'b1001)
+		if (rptr == depth)
 			rptr <= 0;
-		else
-		rptr <= rptr + 1;
+		else begin
+		dout <= fifo_mem[rptr[3:0]];
+		rptr <= rptr + 1'b1;
 	end
+end
 end
 //assign full = ((wptr[3] != rptr[3]) && (wptr[2:0] == rptr[2:0]));
 //assign full = (wptr == 4'b1000 && rptr == 4'b0000);
