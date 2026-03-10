@@ -20,7 +20,7 @@ begin
 	end
 	else if ( w && !full)
 	begin
-		if (wptr == depth )
+		if (wptr == depth-1)
 			wptr <= 0;
 		else begin
 		fifo_mem[wptr[3:0]] <= din;
@@ -37,7 +37,7 @@ begin
 	end
 	else if ( r && !empty)
 	begin
-		if (rptr == depth)
+		if (rptr == depth-1)
 			rptr <= 0;
 		else begin
 		dout <= fifo_mem[rptr[3:0]];

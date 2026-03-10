@@ -1,0 +1,289 @@
+$date
+	Tue Mar 10 07:38:24 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_async_fifo $end
+$var wire 8 ! r_dout [7:0] $end
+$var wire 1 " full $end
+$var wire 1 # empty $end
+$var parameter 32 $ d_width $end
+$var parameter 32 % ptr_width $end
+$var reg 1 & rclk $end
+$var reg 1 ' re $end
+$var reg 1 ( rrst $end
+$var reg 8 ) w_data [7:0] $end
+$var reg 1 * wclk $end
+$var reg 1 + we $end
+$var reg 1 , wrst $end
+$scope module uut $end
+$var wire 1 & rclk $end
+$var wire 1 ' re $end
+$var wire 1 ( rrst $end
+$var wire 8 - w_data [7:0] $end
+$var wire 1 * wclk $end
+$var wire 1 + we $end
+$var wire 1 , wrst $end
+$var wire 4 . sync_gwptr [3:0] $end
+$var wire 4 / sync_grptr [3:0] $end
+$var wire 8 0 r_dout [7:0] $end
+$var wire 4 1 g_wptr [3:0] $end
+$var wire 4 2 g_rptr [3:0] $end
+$var wire 1 " full $end
+$var wire 1 # empty $end
+$var wire 4 3 b_wptr [3:0] $end
+$var wire 4 4 b_rptr [3:0] $end
+$var parameter 32 5 d_width $end
+$var parameter 32 6 ptr_width $end
+$scope module b1 $end
+$var wire 1 & rclk $end
+$var wire 1 ( rrst $end
+$var wire 4 7 g_wptr [3:0] $end
+$var parameter 32 8 ptr_width $end
+$var reg 4 9 din [3:0] $end
+$var reg 4 : sync_gwptr [3:0] $end
+$upscope $end
+$scope module b2 $end
+$var wire 1 * wclk $end
+$var wire 1 , wrst $end
+$var wire 4 ; g_rptr [3:0] $end
+$var parameter 32 < ptr_width $end
+$var reg 4 = din [3:0] $end
+$var reg 4 > sync_grptr [3:0] $end
+$upscope $end
+$scope module b3 $end
+$var wire 4 ? g_wptr [3:0] $end
+$var wire 4 @ nxtg_wptr [3:0] $end
+$var wire 4 A sync_grptr [3:0] $end
+$var wire 1 * wclk $end
+$var wire 1 + we $end
+$var wire 1 , wrst $end
+$var wire 4 B nxtb_wptr [3:0] $end
+$var wire 1 " full $end
+$var parameter 32 C depth $end
+$var parameter 32 D ptr_width $end
+$var reg 4 E b_wptr [3:0] $end
+$upscope $end
+$scope module b4 $end
+$var wire 4 F g_rptr [3:0] $end
+$var wire 4 G nxtg_rptr [3:0] $end
+$var wire 1 & rclk $end
+$var wire 1 ' re $end
+$var wire 1 ( rrst $end
+$var wire 4 H sync_gwptr [3:0] $end
+$var wire 4 I nxtb_rptr [3:0] $end
+$var wire 1 # empty $end
+$var parameter 32 J depth $end
+$var parameter 32 K ptr_width $end
+$var reg 4 L b_rptr [3:0] $end
+$upscope $end
+$scope module b5 $end
+$var wire 4 M b_rptr [3:0] $end
+$var wire 4 N b_wptr [3:0] $end
+$var wire 1 # empty $end
+$var wire 1 " full $end
+$var wire 1 & rclk $end
+$var wire 1 ' re $end
+$var wire 8 O w_data [7:0] $end
+$var wire 1 * wclk $end
+$var wire 1 + we $end
+$var parameter 32 P d_width $end
+$var parameter 32 Q depth $end
+$var parameter 32 R ptr_width $end
+$var reg 8 S r_dout [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 R
+b1000 Q
+b1000 P
+b100 K
+b1000 J
+b100 D
+b1000 C
+b100 <
+b100 8
+b100 6
+b1000 5
+b100 %
+b1000 $
+$end
+#0
+$dumpvars
+bx S
+b0 O
+b0 N
+b0 M
+b0 L
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 ;
+b0 :
+b0 9
+b0 7
+b0 4
+b0 3
+b0 2
+b0 1
+bx 0
+b0 /
+b0 .
+b0 -
+0,
+0+
+0*
+b0 )
+0(
+0'
+0&
+1#
+0"
+bx !
+$end
+#5
+1*
+#8
+1&
+#10
+b1 @
+b1 B
+0*
+1+
+1(
+1,
+#15
+b11 @
+b1 1
+b1 7
+b1 ?
+b10 B
+b1 3
+b1 E
+b1 N
+1*
+#16
+0&
+#20
+0*
+b100100 )
+b100100 -
+b100100 O
+#24
+b1 9
+1&
+#25
+b10 @
+b11 1
+b11 7
+b11 ?
+b11 B
+b10 3
+b10 E
+b10 N
+1*
+#30
+0*
+b10000001 )
+b10000001 -
+b10000001 O
+#32
+0&
+#35
+b110 @
+b10 1
+b10 7
+b10 ?
+b100 B
+b11 3
+b11 E
+b11 N
+1*
+#40
+0#
+b1 .
+b1 :
+b1 H
+b10 9
+0*
+1&
+b1001 )
+b1001 -
+b1001 O
+#45
+b111 @
+b110 1
+b110 7
+b110 ?
+b101 B
+b100 3
+b100 E
+b100 N
+1*
+#48
+0&
+#50
+0*
+b1100011 )
+b1100011 -
+b1100011 O
+#55
+b101 @
+b111 1
+b111 7
+b111 ?
+b110 B
+b101 3
+b101 E
+b101 N
+1*
+#56
+b10 .
+b10 :
+b10 H
+b111 9
+1&
+#60
+0*
+b1101 )
+b1101 -
+b1101 O
+#64
+0&
+#65
+b100 @
+b101 1
+b101 7
+b101 ?
+b111 B
+b110 3
+b110 E
+b110 N
+1*
+#70
+0*
+b10001101 )
+b10001101 -
+b10001101 O
+#72
+b111 .
+b111 :
+b111 H
+b101 9
+1&
+#75

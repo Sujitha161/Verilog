@@ -24,14 +24,15 @@ initial begin
 	// case 1 
 	$display("write operation in both port");
 	ena = 1;enb=1;wea=1;web=1;#10;
+	data_gen;#10;
 //case 2
 	$display("Port A write Port B read");
          ena = 1;enb=1;wea=1;web=0;#10;
-	data_gen;
+	data_gen;#10;
 //case 3	
 	$display("Port A read Port B write");
 	 ena = 1;enb=1;wea=0;web=1;#10;
-	 data_gen;
+	 data_gen;#10;
 //case 4
 	$display("Read operation in both");
 	 ena = 1;enb=1;wea=0;web=0;#10;
